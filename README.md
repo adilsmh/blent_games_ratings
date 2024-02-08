@@ -68,9 +68,9 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 Ce projet comprend un script Python pour les différentes étapes du processus ETL. Voici le guide d'utilisation :
 
 -   `pipeline.py` : Ce script se port de main et contient toutes les functions suivantes :
-                    - create_table() : Defini le schema de la table à creer si elle n'existe déja.
-                    - data_fetcher() : Recupere les données depuis la base de données MongoDB, et effectue toutes les aggregations et transformations necessaires. 
-                    - data_injector() : Injecter les nouvelles données recuperes dans la base de données (Data Warehouse) PosgreSQL, avec les precautions necessaires (dublons remplacées).
+    - create_table() : Defini le schema de la table à creer si elle n'existe déja.
+    - data_fetcher() : Recupere les données depuis la base de données MongoDB, et effectue toutes les aggregations et transformations necessaires. 
+    - data_injector() : Injecter les nouvelles données recuperes dans la base de données (Data Warehouse) PosgreSQL, avec les precautions necessaires (dublons remplacées).
 
 5\. Outils et Technologies
 --------------------------
