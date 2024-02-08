@@ -4,8 +4,6 @@ Amélioration du Catalogue de Vente en Ligne pour une Enseigne de Jeux Vidéos
 Description du Projet
 ---------------------
 
-La description du projet fournit un ensemble d'informations sur le contexte et le secteur cible. Elle définit des informations essentielles telles que les contraintes du projet et les objectifs à atteindre.
-
 Une enseigne de jeux vidéos cherche à améliorer son catalogue de vente en ligne en proposant une liste des jeux les mieux notés et les plus appréciés de la communauté sur les derniers jours. Pour cela, elle souhaite récupérer les avis les plus récents de ses propres clients en ligne pour déterminer les jeux les mieux notés. Les développeurs Web de l'entreprise souhaitent pouvoir requêter ces informations sur une base de données SQL qui va historiser au jour le jour les jeux les mieux notés.
 
 Les données brutes sont stockées dans une base MongoDB, et il est supposé que celles-ci sont ajoutées au fur et à mesure par d'autres programmes (API backend). L'objectif est de construire un pipeline de données qui va alimenter automatiquement un Data Warehouse (représenté par une base de données SQL) tous les jours en utilisant les données depuis la base MongoDB. Ce pipeline de données doit être développé en Python.
