@@ -55,9 +55,8 @@ Les données sont disponible sous forme de fichier compressé au format JSON. Ch
 
 ### 3.4. Modélisation des Données
 
-![image](https://github.com/adilsmh/blent_games_ratings/assets/76161036/9e6ee9ea-cc24-4a57-a781-0ceb239e7f2e)
-
 -   Création du schéma de la base de données SQL pour stocker les données préparées.
+    ![image](https://github.com/adilsmh/blent_games_ratings/assets/76161036/e86ff656-43ab-4710-966b-113744f1484a)
 -   Conception des pipelines ETL pour extraire, transformer et charger les données.
 
 ### 3.5. Évaluation
