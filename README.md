@@ -1,4 +1,4 @@
-Amélioration du Catalogue de Vente en Ligne pour une Enseigne de Jeux Vidéos
+Amélioration du catalogue de vente en ligne pour une enseigne de jeux vidéos
 ============================================================================
 
 Description du Projet
