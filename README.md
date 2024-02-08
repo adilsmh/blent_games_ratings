@@ -34,7 +34,7 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 
 ### 3.2. Compréhension des Données
 
-Les données sont disponible sous forme de fichier compressé au format JSON. Chaque observation contient les caractéristiques suivantes:
+- Les données sont disponible sous forme de fichier compressé au format JSON. Chaque observation contient les caractéristiques suivantes:
     - reviewerID : identifiant unique de l'utilisateur.
     - verified : indique si l'utilisateur est un utilisateur vérifié (et non un robot).
     - asin : identifiant unique du produit.
