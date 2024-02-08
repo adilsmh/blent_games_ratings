@@ -56,10 +56,6 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 
 -   Création du schéma de la base de données SQL pour stocker les données préparées.
 
-### 3.5. Évaluation
-
--   Vérification que les données chargées dans le Data Warehouse répondent aux exigences métier.
-
 4\. Guide d'Utilisation
 -----------------------
 
