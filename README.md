@@ -56,31 +56,20 @@ Les données sont disponible sous forme de fichier compressé au format JSON. Ch
 ### 3.4. Modélisation des Données
 
 -   Création du schéma de la base de données SQL pour stocker les données préparées.
-    ![image](https://github.com/adilsmh/blent_games_ratings/assets/76161036/00642341-b213-4d56-bd37-12335c28f77d) { width: 50px; }
-
 -   Conception des pipelines ETL pour extraire, transformer et charger les données.
 
 ### 3.5. Évaluation
 
--   Évaluation de la qualité des données transformées.
 -   Vérification que les données chargées dans le Data Warehouse répondent aux exigences métier.
-
-### 3.6. Déploiement
-
--   Déploiement des pipelines ETL dans un environnement de production.
--   Automatisation des tâches de traitement des données avec Cron.
-
-### 3.7. Suivi et Maintenance
-
--   Surveillance des performances des pipelines ETL et du Data Warehouse.
--   Mise à jour des pipelines et du schéma de la base de données en fonction des évolutions des besoins métier.
 
 4\. Guide d'Utilisation
 -----------------------
 
-Ce projet comprend plusieurs scripts Python pour les différentes étapes du processus ETL. Voici un guide d'utilisation pour chaque script :
+Ce projet comprend un script Python pour les différentes étapes du processus ETL. Voici le guide d'utilisation :
 
--   `pipeline.py` : Ajoute les données brutes dans la base MongoDB.
+-   `pipeline.py` : Contiens les functions qui permettent de recuperer les données de la base de données MongoDB,
+                    pour en suite realiser toutes les aggregations et transformations necessaires sur les données recuperes
+                    et enfin injecter ces nouvelles données dans la base de données (Data Warehouse) PosgreSQL.
 
 5\. Outils et Technologies
 --------------------------
