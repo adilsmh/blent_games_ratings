@@ -23,16 +23,30 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 
 -   Objectifs : Amélioration du catalogue de vente en ligne en mettant en avant les jeux les mieux notés.
 -   Sources de Données : Avis des clients en ligne stockés dans une base MongoDB.
--   Contraintes
+-   Contraintes :
     -   Les informations des jeux les mieux notés doivent être exactes et faciles à manipuler.
-    -   Le Data Warehouse doit être une base de données compatible SQL : MySQL, PostgreSQL ou MariaDB.
+    -   Le Data Warehouse doit être une base de données compatible SQL :
+        -   MySQL
+        -   PostgreSQL
+        -   MariaDB
     -   Le pipeline doit éviter les doublons et ne pas prendre en compte les avis de plus de 6 mois d'antériorité.
     -   Chaque jour, les 15 jeux les mieux notés sur les 6 derniers mois seront ajoutés dans le Data Warehouse.
 
 ### 3.2. Compréhension des Données
 
--   Collecte des données brutes depuis la base MongoDB.
--   Exploration des données pour comprendre leur structure et leur qualité.
+Les données sont disponible sous forme de fichier compressé au format JSON. Chaque observation contient les caractéristiques suivantes:
+    - reviewerID : identifiant unique de l'utilisateur.
+    - verified : indique si l'utilisateur est un utilisateur vérifié (et non un robot).
+    - asin : identifiant unique du produit.
+    - reviewerName : nom/pseudo de l'utilisateur.
+    - vote : nombre de votes associés à l'avis de l'utilisateur.
+    - style : style associé au jeu vidéo.
+    - reviewText : description complète de l'avis.
+    - overall : note attribuée par l'utilisateur au jeu vidéo.
+    - summary : résumé de l'avis.
+    - unixReviewTime : timestamp de l'avis.
+    - reviewTime : date de l'avis.
+    - image : URL des images jointes par l'utilisateur.
 
 ### 3.3. Préparation des Données
 
@@ -64,9 +78,7 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 
 Ce projet comprend plusieurs scripts Python pour les différentes étapes du processus ETL. Voici un guide d'utilisation pour chaque script :
 
--   `import_data.py` : Ajoute les données brutes dans la base MongoDB.
--   `etl_pipeline.py` : Effectue l'extraction, la transformation et le chargement des données dans le Data Warehouse.
--   `load_data.py` : Charge les résultats dans la base de données SQL.
+-   `pipeline.py` : Ajoute les données brutes dans la base MongoDB.
 
 5\. Outils et Technologies
 --------------------------
