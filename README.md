@@ -1,6 +1,7 @@
 Amélioration du catalogue de vente en ligne pour une enseigne de jeux vidéos
 ============================================================================
 
+
 1\. Description du Projet
 ---------------------
 
