@@ -50,13 +50,11 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 
 ### 3.3. Préparation des Données
 
--   Nettoyage des données en éliminant les valeurs manquantes et les duplicatas.
--   Transformation des données pour agréger les avis par jeu vidéo.
+-   Conception de la pipeline ETL pour extraire, transformer et charger les données.
 
-### 3.4. Modélisation des Données
+### 3.4. Modélisation de la base de données
 
 -   Création du schéma de la base de données SQL pour stocker les données préparées.
--   Conception des pipelines ETL pour extraire, transformer et charger les données.
 
 ### 3.5. Évaluation
 
@@ -68,9 +66,9 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 Ce projet comprend un script Python pour les différentes étapes du processus ETL. Voici le guide d'utilisation :
 
 -   `pipeline.py` : Ce script se port de main et contient toutes les functions suivantes :
-    - create_table() : Defini le schema de la table à creer si elle n'existe déja.
-    - data_fetcher() : Recupere les données depuis la base de données MongoDB, et effectue toutes les aggregations et transformations necessaires. 
-    - data_injector() : Injecter les nouvelles données recuperes dans la base de données (Data Warehouse) PosgreSQL, avec les precautions necessaires (dublons remplacées).
+    - create_table() : Définit le schéma de la table à creer si elle n'existe déjà.
+    - data_fetcher() : Extrait les données depuis la base de données MongoDB et effectue toutes les agrégations et transformations requises.
+    - data_injector() : Realise l'injection des nouvelles données récupérées dans la base de données (Data Warehouse) PosgreSQL, en prenant les précautions nécessaires (remplacement des doublons).
 
 5\. Outils et Technologies
 --------------------------
