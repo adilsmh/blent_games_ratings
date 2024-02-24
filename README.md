@@ -1,7 +1,7 @@
 Amélioration du catalogue de vente en ligne pour une enseigne de jeux vidéos
 ============================================================================
 
-<b1>Diagramme ETL</b1>
+<h2><b>Diagramme ETL</b></h2>
 
 ![Diagramme ETL](https://github.com/adilsmh/blent_games_ratings/assets/76161036/a0285138-0d78-4d22-bb87-9c52acf5055a)
 
