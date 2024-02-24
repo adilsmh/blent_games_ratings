@@ -1,9 +1,9 @@
 Amélioration du catalogue de vente en ligne pour une enseigne de jeux vidéos
 ============================================================================
 
+Diagramme ETL
 
-![Diagramme sans nom drawio (2)](https://github.com/adilsmh/blent_games_ratings/assets/76161036/dbdaaec7-dcc5-4f27-a421-a0cae923085a)
-
+![Diagramme ETL)](https://github.com/adilsmh/blent_games_ratings/assets/76161036/decf90f6-657f-4d81-b398-b7484b2bd772)
 
 1\. Description du Projet
 ---------------------
