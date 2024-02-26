@@ -2,6 +2,9 @@ import psycopg2
 import pandas as pd
 from tqdm import tqdm
 
+from airflow import DAG
+from airflow.operators.python_operator import PythonOperator
+
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from pymongo import MongoClient
@@ -153,6 +156,22 @@ def postgres_data_injector():
     cursor.close()
     conn.close()
 
+# Define the Airflow DAG (Directed Acyclic Graph)
+dag = DAG(
+    "Pipeline pour recccolte de données de jeux videos",
+    description="Pipeline d'avis jeux videos",
+    schedule_interval="@daily",
+    start_date=datetime.utcnow(),
+)
 
-if __name__ == "__main__":
-    postgres_data_injector()
+# Define the tasks in the DAG
+extract_transform = PythonOperator(
+    task_id="extract_and_transform", python_callable=mongodb_data_fetcher, dag=dag
+)
+
+load = PythonOperator(
+    task_id="load_to_db", python_callable=postgres_data_injector, dag=dag
+)
+
+# Set task dependencies
+extract_transform >> load
