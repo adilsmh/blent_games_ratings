@@ -51,14 +51,6 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
     - reviewTime : date de l'avis.
     - image : URL des images jointes par l'utilisateur.
 
-### 3.3. Préparation des Données
-
--   Conception de la pipeline ETL pour extraire, transformer et charger les données.
-
-### 3.4. Modélisation de la base de données
-
--   Création du schéma de la base de données SQL pour stocker les données préparées.
-
 4\. Guide d'Utilisation
 -----------------------
 
