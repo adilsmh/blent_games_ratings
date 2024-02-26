@@ -58,6 +58,7 @@ Les données brutes sont stockées dans une base MongoDB, et il est supposé que
 ### 3.4. Modélisation de la base de données
 
 -   Création du schéma de la base de données SQL pour stocker les données préparées.
+-   ![snippet](https://github.com/adilsmh/blent_games_ratings/assets/76161036/750b9782-4cd5-48f6-bd20-f0067b887be0)
 
 4\. Guide d'Utilisation
 -----------------------
