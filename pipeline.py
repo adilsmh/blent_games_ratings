@@ -156,6 +156,7 @@ def postgres_data_injector():
     cursor.close()
     conn.close()
 
+
 # Define the Airflow DAG (Directed Acyclic Graph)
 dag = DAG(
     "Pipeline pour recccolte de données de jeux videos",
